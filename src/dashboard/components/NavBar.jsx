@@ -40,7 +40,7 @@ export const NavBar = ({ drawerWidth = 240 }) => {
                         height: '50px',
                         width: 'auto',
                     }}
-                    src="../public/logo.png"
+                    src="/logo.png"
                 />
 
                 <IconButton 

@@ -18,7 +18,7 @@ export const AuthLayout = ({ children, title = '' }) => {
         rgba(255, 255, 255, 0.733),
         rgba(255, 255, 255, 0),
         rgb(255, 0, 0,0)
-        ), url(${"../public/background.jpg"})`, backgroundAttachment:'fixed', padding: {sm: 14, xs: 4} }}
+        ), url(${"/background.jpg"})`, backgroundAttachment:'fixed', padding: {sm: 14, xs: 4} }}
     >
 
       <Grid item
@@ -38,7 +38,7 @@ export const AuthLayout = ({ children, title = '' }) => {
             height: 'auto',
             width: '100%',
           }}
-          src="../public/logo.png"
+          src="/logo.png"
         />
      
           { children }
