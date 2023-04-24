@@ -1,5 +1,7 @@
+
 import { Navigate, Routes, Route } from 'react-router-dom'
 import { DashboardPage } from '../pages/DashboardPage'
+
 
 export const DashboardRoutes = () => {
   return (

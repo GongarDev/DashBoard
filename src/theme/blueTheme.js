@@ -1,36 +1,49 @@
 import { createTheme } from '@mui/material';
 import { red } from '@mui/material/colors';
 
-export const greenTheme = createTheme({
+export const blueTheme = createTheme({
     palette: {
         primary: {
-            main: '#31ba4f'
+            main: '#34C5B8' //Azul verdoso
         },
         secondary: {
-            main: '#242424'
+            main: '#0C1B38' //azul marino
         },
         error: {
-            main: red.A400
+            main: '#E4717A' //Coral
         }
     },
     components: {
         MuiButton: {
           styleOverrides: {
             root: {
-                color: '#ffffff',
-                backgroundColor: '#31ba4f',
+                color: '#fff',
+                backgroundColor: '#34C5B8',
                 fontSize: '1rem',
                 '&:hover': {
-                    backgroundColor: '#25913c',
-                    color: '#ffffff',
+                    backgroundColor: '#0C1B38',
+                    color: '#34C5B8',
                 },
             },
           },
         },
+        MuiIconButton:{
+          styleOverrides: {
+            root: {
+              color: '#fff',
+              backgroundColor: '#34C5B8',
+              fontSize: '1rem',
+              '&:hover': {
+                  backgroundColor: '#0C1B38',
+                  color: '#34C5B8',
+              },
+          },
+          }
+        },
         MuiTextField: {
           styleOverrides: {
             root: {
-                color: '#ffffff',
+                color: '#fff',
                 backgroundColor: '#f3f6f9',
                 
                 borderRadius: '4px',
@@ -53,19 +66,41 @@ export const greenTheme = createTheme({
         MuiToolbar: {
           styleOverrides: {
             root: {
-              backgroundColor: '#ffffff',
+              backgroundColor: '#fff;',
+          },
+          },
+        },
+        MuiPaper: {
+          styleOverrides: {
+            root: {
+              backgroundColor: '#fff;',
           },
           },
         },
         MuiListItem: {
           styleOverrides: {
             root: {
-              color: '#31ba4f',
-              backgroundColor: '#ffffff',
+              color: '#0C1B38',
+              backgroundColor: '#fff;',
               fontSize: '1rem',
-              fill: '#31ba4f',
+
               '&:hover': {
-                  backgroundColor: '#31ba4f',
+                  backgroundColor: '#0C1B38',
+                  color: '#ffffff',
+              },
+            },
+          },
+        },
+        MuiListItemButton: {
+          styleOverrides: {
+            root: {
+              color: '#0C1B38',
+              backgroundColor: '#fff;',
+              fontSize: '1rem',
+              paddingTop: '4px',
+              paddingBottom: '4px',
+              '&:hover': {
+                  backgroundColor: '#0C1B38',
                   color: '#ffffff',
               },
             },
@@ -74,7 +109,7 @@ export const greenTheme = createTheme({
         MuiListItemIcon: {
           styleOverrides: {
             root: {
-              color: 'inherit',
+              color: '#34C5B8',
             },
           },
         },

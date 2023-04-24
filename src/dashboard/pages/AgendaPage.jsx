@@ -1,9 +1,11 @@
+
 import { useDispatch, useSelector } from 'react-redux';
+import { NoteView, NothingSelectedView } from '../components/agenda';
+import { startNewNote } from "../../store/dashboard";
+
 import { Grid, IconButton } from "@mui/material"
 import { AddOutlined } from '@mui/icons-material';
 
-import { NoteView, NothingSelectedView } from '../views';
-import { startNewNote } from "../../store/dashboard";
 
 export const AgendaPage = () => {
 
@@ -35,9 +37,6 @@ export const AgendaPage = () => {
         size='large'
         disabled={ isSaving }
         sx={{
-          color: 'white',
-          backgroundColor: 'error.main',
-          ':hover': { backgroundColor: 'error.main', opacity: 0.9 },
           position: 'fixed',
           right: 50,
           bottom: 50
@@ -46,7 +45,6 @@ export const AgendaPage = () => {
         <AddOutlined sx={{ fontSize: 30 }} />
       </IconButton>
       
-
     </Grid>
   )
 }

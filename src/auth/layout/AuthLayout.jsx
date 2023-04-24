@@ -22,31 +22,29 @@ export const AuthLayout = ({ children, title = '' }) => {
     >
 
       <Grid item
-       xs={ 3 }
-       sx={{ 
+        xs={ 3 }
+        sx={{ 
             width: { sm: 450 },
             backgroundColor: 'transparent', 
             padding: 3, 
             borderRadius: 2,
-        }}>
-          
-          
-          <Box
-        component="img"
-        alignItems="center"
-        sx={{
-          height: 'auto',
-          width: '100%',
         }}
-        src="../public/logo.png"
-      />
+      >
+          
+        <Box
+          component="img"
+          alignItems="center"
+          sx={{
+            height: 'auto',
+            width: '100%',
+          }}
+          src="../public/logo.png"
+        />
+     
+          { children }
 
-            
-            { children }
-
-        </Grid>
+      </Grid>
 
     </Grid>
-
   )
 }

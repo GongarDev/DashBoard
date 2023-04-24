@@ -1,7 +1,7 @@
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
 import { getAuth } from 'firebase/auth';
-import { getFirestore } from 'firebase/firestore/lite';
+import { getFirestore } from 'firebase/firestore';
 import { getEnvironments } from '../helpers/getEnvironments';
 
 // TODO: Add SDKs for Firebase products that you want to use
@@ -11,7 +11,6 @@ import { getEnvironments } from '../helpers/getEnvironments';
 const {
   VITE_APIKEY,
   VITE_AUTHDOMAIN,
-  // VITE_DATABASEURL,
   VITE_PROJECTID,
   VITE_STORAGEBUCKET,
   VITE_MESSAGINGSENDERID,
@@ -22,7 +21,6 @@ const {
 const firebaseConfig = {
   apiKey: VITE_APIKEY,
   authDomain: VITE_AUTHDOMAIN,
-  // databaseURL: VITE_DATABASEURL,
   projectId: VITE_PROJECTID,
   storageBucket: VITE_STORAGEBUCKET,
   messagingSenderId: VITE_MESSAGINGSENDERID,

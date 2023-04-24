@@ -1,6 +1,8 @@
+
 import { loginWithEmailPassword, registerUserWithEmailPassword, singInWithGoogle, logoutFirebase } from '../../firebase/providers';
 import { clearNotesLogout } from '../dashboard/agenda';
 import { checkingCredentials, logout, login } from './';
+
 
 export const checkingAuthentication = () => {
     return async( dispatch ) => {
@@ -9,7 +11,6 @@ export const checkingAuthentication = () => {
         
     }
 }
-
 
 export const startGoogleSignIn = () => {
     return async( dispatch ) => {
@@ -23,7 +24,6 @@ export const startGoogleSignIn = () => {
 
     }
 }
-
 
 export const startCreatingUserWithEmailPassword = ({ email, password, displayName }) => {
     return async( dispatch ) => {
@@ -39,7 +39,6 @@ export const startCreatingUserWithEmailPassword = ({ email, password, displayNam
 
 }
 
-
 export const startLoginWithEmailPassword = ({ email, password }) => {
     return async( dispatch ) => {
 
@@ -53,7 +52,6 @@ export const startLoginWithEmailPassword = ({ email, password }) => {
 
     }
 }
-
 
 export const startLogout = () => {
     return async( dispatch ) => {

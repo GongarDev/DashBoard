@@ -1,5 +1,4 @@
 
-
 export const getEnvironments = () => {
 
   import.meta.env;
@@ -7,6 +6,4 @@ export const getEnvironments = () => {
   return {
       ...import.meta.env
   }
-
-
 }

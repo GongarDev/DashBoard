@@ -112,7 +112,6 @@ export const RegisterPage = () => {
               </Grid>
             </Grid>
 
-
             <Grid container direction='row' justifyContent='end'>
               <Typography sx={{ mr: 1 }}>¿Ya tienes cuenta?</Typography>
               <Link component={ RouterLink } color='inherit' to="/auth/login">
@@ -121,7 +120,6 @@ export const RegisterPage = () => {
             </Grid>
 
           </Grid>
-
 
         </form>
 

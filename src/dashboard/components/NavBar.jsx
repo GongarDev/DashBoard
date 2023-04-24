@@ -1,7 +1,10 @@
+
 import { useDispatch } from 'react-redux';
+import { startLogout } from '../../store/auth';
+
 import { AppBar, Grid, IconButton, Toolbar, Box } from '@mui/material';
 import { LogoutOutlined, MenuOutlined } from '@mui/icons-material';
-import { startLogout } from '../../store/auth';
+
 
 export const NavBar = ({ drawerWidth = 240 }) => {
 
@@ -31,17 +34,17 @@ export const NavBar = ({ drawerWidth = 240 }) => {
 
             <Grid container direction='row' justifyContent='space-between' alignItems='center'>
                 <Box
-                  component="img"
-                  alignItems="center"
-                  sx={{
-                    height: '50px',
-                    width: 'auto',
-                  }}
-                  src="../public/logo.png"
+                    component="img"
+                    alignItems="center"
+                    sx={{
+                        height: '50px',
+                        width: 'auto',
+                    }}
+                    src="../public/logo.png"
                 />
 
                 <IconButton 
-                    color='primary'
+                    color='error'
                     onClick={ onLogout }
                 >
                     <LogoutOutlined />

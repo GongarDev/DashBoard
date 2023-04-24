@@ -3,3 +3,4 @@ export * from './SideBar';
 export * from './Profiles';
 export * from './SideBarItem';
 export * from './SideBarItemNote';
+export * from './modalNotifications';
